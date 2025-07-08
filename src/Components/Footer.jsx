@@ -6,7 +6,7 @@ import {
 } from "@tabler/icons-react";
 
 const Footer = () => (
-  <footer className="py-8 px-4 bg-[#1B3C53] text-[#F9F3EF]">
+  <footer className="py-8 px-4 bg-gradient-to-tl from-primary via-secondary to-accent text-light">
     <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
       {/* Logo and Brand */}
       <div className="flex items-center gap-3">
@@ -15,16 +15,16 @@ const Footer = () => (
       </div>
       {/* Legal, Links, and Socials */}
       <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-sm">
-        <span className="text-[#D2C1B6]">
+        <span className="text-grayish">
           &copy; {new Date().getFullYear()} BusinessApp. All rights reserved.
         </span>
-        <a href="/privacy" className="hover:underline text-[#F9F3EF]">
+        <a href="/privacy" className="hover:underline text-light">
           Privacy Policy
         </a>
-        <a href="/terms" className="hover:underline text-[#F9F3EF]">
+        <a href="/terms" className="hover:underline text-light">
           Terms of Service
         </a>
-        <span className="text-[#D2C1B6]">Legal mentions</span>
+        <span className="text-grayish">Legal mentions</span>
         {/* Social Media Icons */}
         <div className="flex items-center gap-3 mt-2 md:mt-0">
           <a
@@ -32,7 +32,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:text-[#D2C1B6] transition"
+            className="hover:text-accent transition"
           >
             <IconBrandGithub size={22} />
           </a>
@@ -41,7 +41,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
-            className="hover:text-[#D2C1B6] transition"
+            className="hover:text-accent transition"
           >
             <IconBrandTwitter size={22} />
           </a>
@@ -50,7 +50,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:text-[#D2C1B6] transition"
+            className="hover:text-accent transition"
           >
             <IconBrandLinkedin size={22} />
           </a>

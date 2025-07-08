@@ -1,4 +1,2 @@
 @import "tailwindcss";
-body {
-    cursor: none;
-  }
+@config "../tailwind.config.js";
